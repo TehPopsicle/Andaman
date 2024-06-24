@@ -1,0 +1,279 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'Jost';
+    box-sizing: border-box;
+}
+
+/*===============================
+---------Navigation Bar----------
+===============================*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:2%;
+    padding-right:2%;
+    position: fixed;
+    z-index: 100;
+    display:inline-block;
+    background-color:  #adf7f7b9;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: top;
+}
+.logo1{
+    color:#ffffff;
+    font-size:25px;
+    letter-spacing: 1px;
+    cursor:pointer;
+    align-items: left;
+    text-align: left;
+}
+.logo2{
+    color:#20cf55;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor:pointer;
+    align-items: left;
+    text-align: left;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 25px 25px;
+    align-items:right;
+    text-align: right;
+}
+nav ul li a{
+    color:#3f8796;
+    align-items:center;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:larger;
+}
+nav ul li a:hover{
+    color:#116372;
+    transition:0.578s;
+}
+
+/*===============================
+---------Home / Main Page--------
+===============================*/
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(res/Home.png);
+    background-size: 100%;
+    background-position:    center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.homecontent{
+    position: absolute;
+    top:    40%;
+    left:   8%;
+    transform: translateY(-50);
+}
+.container{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.home:hover .container {
+    height: 100%;
+    bottom: 0;
+}  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.andaman{
+    color: #bcffd0;
+    font-size: 50px;
+}
+h3{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+/*===============================
+---------About Page--------------
+===============================*/
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 0px;
+    background-color: #faf758;
+
+}
+.about img{
+    height: auto;
+    width: 350px;
+    border: 2px solid transparent;
+}
+.aboutcontent{
+    width: 1030px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text{
+    width: 600px;
+    padding-top: 100px;
+}
+.about-text h2{
+    color: #d38117;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.about-text h3{
+    color: #d38117;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+.about-text p{
+    color: #d38117;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/*===============================
+----------Tourism Page-----------
+===============================*/
+.tourism{
+    background-color: #c4ffe7;
+    width: 100%;
+    height: 150%;
+    padding: 0px 0px;
+}
+.tourismcontent{
+    padding-top: 100px;
+}
+.tourismcontent h2{
+    color: #40747e;
+    font-size: 45px;
+    margin: 5px auto;
+    text-align: center;
+}
+.tourismcontent h3{
+    color: #40747e;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+/*===============================
+--------------Card---------------
+===============================*/
+.cards-body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: #666;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+/*===============================
+----------Culture Page-----------
+===============================*/
+.culture{
+    background-color: #c4ffe7;
+    width: 100%;
+    height: 150%;
+    padding: 0px 0px;
+}
+.culturecontent{
+    padding-top: 100px;
+}
+.culturecontent h2{
+    color: #40747e;
+    font-size: 45px;
+    margin: 5px auto;
+    text-align: center;
+}
+.culturecontent h3{
+    color: #40747e;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+/*=================================
+--------------Footer---------------
+=================================*/
+footer{
+    position:relative;
+    width:100%;
+    height:100px;
+    background-color: #152c27fa;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color:#f0f0f0;
+    font-size: 22.5px;
+    font-family: 'Poppins';
+    font-style:oblique;
+}
+
+/* 
